@@ -1,0 +1,30 @@
+@use '../globals' as *;
+
+.loaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+
+  & .loader {
+    width: 50px;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: $gray-400;
+    --_m: 
+      conic-gradient(#0000 10%,#000),
+      linear-gradient(#000 0 0) content-box;
+      mask: var(--_m);
+      mask-composite: subtract;
+      
+    @include animation(
+      $name: l3,
+      $duration: 1s,
+      $iteration-count: infinite,
+      $timing-function: linear
+    );
+  }
+}
+
+@keyframes l3 {to{transform: rotate(1turn)}}

@@ -1,0 +1,47 @@
+@use '../globals/' as *;
+
+.button {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: $gray-200;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $gray-200;
+    }
+  }
+}
+
+.custom-button-primary {
+  background-color: $indigo-600;
+  color: $white;
+
+  &:hover {
+    background-color: $indigo-500;
+  }
+}
+
+.custom-button-secondary {
+  background-color: $white;
+  color: $gray-500;
+
+  &:hover {
+    background-color: $gray-100;
+  }
+}
+
+.custom-button-danger {
+  background-color: $red-600;
+  color: $white;
+  
+  &:hover {
+    background-color: $red-500;
+  }
+}
+

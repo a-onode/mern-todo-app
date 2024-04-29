@@ -1,0 +1,31 @@
+@use '../globals/' as *;
+
+.home {
+  padding: 2.5rem 2rem;
+  @include mq(xl) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.appHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.emptyState {
+  text-align: center;
+
+  &__title {
+    margin-top: 0.25rem;
+    font-size: 1.5rem;
+    color: $gray-800;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    color: $gray-500; 
+  }
+}

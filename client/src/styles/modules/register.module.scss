@@ -1,0 +1,44 @@
+@use '../globals/' as *;
+
+.form {
+  margin-top: 2.5rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 30rem;
+
+  &__group {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    & > button {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.login {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-weight: semibold;
+  font-size: 0.875rem;
+  color: $gray-500;
+
+  &__link {
+    font-weight: semibold;
+    color: $indigo-600;
+    text-decoration: none;
+
+    &:hover {
+      color: #4338ca;
+    }
+  }
+}
+
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: $red-600;
+  font-size: 0.875rem;
+}

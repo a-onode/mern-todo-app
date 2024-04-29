@@ -1,0 +1,8 @@
+@use './utils/reset';
+
+@use './globals/index';
+@use './globals/mixin';
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
