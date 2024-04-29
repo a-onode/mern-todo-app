@@ -4,6 +4,10 @@
 
 This project is a TODO application using the MERN stack (MongoDB, Express.js, React, Node.js).
 
+## Demo
+
+This application is deployed in Vercel. [here](https://mern-todolist-kappa.vercel.app/).
+
 ## Features
 
 - Add, update, and delete tasks
