@@ -13,8 +13,8 @@ import styles from '../../styles/modules/login.module.scss';
 const Login = () => {
   const navigate = useNavigate();
   const [values, setValues] = useState({
-    email: '',
-    password: ''
+    email: 'testuser@email.com',
+    password: 'Todolist1234'
   });
   const [errorMessage, setErrorMessage] = useState('');
 
